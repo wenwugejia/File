@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/item_bg">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_folder_open_24dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="文件名称"
+        android:id="@+id/textView_tilet"
+        android:textSize="16sp"
+        android:minLines="3"
+        android:layout_alignTop="@+id/imageView_icon"
+        android:layout_toRightOf="@+id/imageView_icon"
+        android:layout_toEndOf="@+id/imageView_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="概要信息"
+        android:id="@+id/textView_info"
+        android:layout_alignBottom="@+id/imageView_icon"
+        android:layout_alignLeft="@+id/textView_tilet"
+        android:layout_alignStart="@+id/textView_tilet" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_more"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_more_vert_24dp"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small" />
+</RelativeLayout>
